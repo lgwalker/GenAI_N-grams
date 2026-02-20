@@ -28,10 +28,6 @@ pip install -r requirements.txt
 ```
 
 
-### External Tools
-- **Git** must be installed and available in your system path.
-- The preprocessing step uses Git to clone repositories.
-
 ---
 
 ## Workflow
@@ -39,7 +35,7 @@ pip install -r requirements.txt
 ### 1. Data Preprocessing
 **File:** `PreprocessingData.ipynb`
 
-This step collects high-quality Java repositories and extracts individual methods.
+This step collects the Java repositories and extracts individual methods.
 
 **Execution**
 Run all cells in the notebook.
@@ -51,11 +47,7 @@ Run all cells in the notebook.
 - Performs shallow clones (`--depth 1`)
 - Randomly samples up to **20 `.java` files** per repository
 - Extracts method bodies using brace-counting
-- Filters:
-  - Non-ASCII content
-  - Methods with fewer than 10 tokens
-  - Duplicate methods
-- Tokenizes methods into space-separated tokens
+- Filters and tokenizes methods into space-separated tokens
 
 **Output Location**
 ```
@@ -104,7 +96,7 @@ Command-line tool for generating predictions and perplexity.
 
 **Usage**
 ```bash
-python test_script.py --test_file ./path/to/test.txt --test_output results.json
+python test_script.py --test_file ./path/to/test.txt --test_output results-xxxxxx.json
 ```
 
 **Arguments**
