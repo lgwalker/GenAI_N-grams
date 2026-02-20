@@ -76,9 +76,9 @@ def main():
     parser = argparse.ArgumentParser(description="Generate N-gram model results for Java methods.")
     
     # Define the arguments (optional if testing with other files from command line)
-    parser.add_argument("--test_file", type=str, default="./ngram_dataset/test.txt", help="Path to the provided test set.")
+    parser.add_argument("--test_file", type=str, default="./dataset/ngram_dataset/test.txt", help="Path to the provided test set.")
     parser.add_argument("--test_output", type=str, default="results-xxxxxx.json", help="Output JSON for provided test set.")
-    parser.add_argument("--mined_file", type=str, default="./ngram_dataset/test_self_mined.txt", help="Path to self-mined test set.")
+    parser.add_argument("--mined_file", type=str, default="./dataset/ngram_dataset/test_self_mined.txt", help="Path to self-mined test set.")
     parser.add_argument("--mined_output", type=str, default="results-yyyyyy.json", help="Output JSON for self-mined test set.")
 
     args = parser.parse_args()
