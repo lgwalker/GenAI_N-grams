@@ -27,10 +27,6 @@ Using requirements file:
 pip install -r requirements.txt
 ```
 
-Or install manually:
-```bash
-pip install javalang gitpython pandas requests nltk
-```
 
 ### External Tools
 - **Git** must be installed and available in your system path.
